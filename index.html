@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="grade.css">
+    <title>Student Grades</title>
+</head>
+
+<body>
+    <h1>Student Gradebook</h1>
+    <form>
+        <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fName" value=""><br><br>
+        <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lName" value=""><br><br>
+        <label for="pointsEarned">Points Earned: </label>
+            <input type="number" id="pointsEarned" name="studentPoints" value=""><br><br>
+        <label for="possiblePoints">Possible Points: </label>
+            <input type="number" id="possiblePoints" name="assignmentPoints" value=""><br><br>
+        <input type="submit" value="Submit">
+    </form><br><br>
+    <div id="output">
+        <div id="studentName"></div><br>
+        <div id="studentGradeNum"></div><br>
+        <div id="studentGradeLetter"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="gradebook.js"></script>
+</body>
+</html>
